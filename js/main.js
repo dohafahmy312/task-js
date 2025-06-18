@@ -11,19 +11,34 @@ btn1.onclick = function () {
 let btn2 = document.querySelector(".changetext");
 let p = document.querySelector("p")
 btn2.onclick = function () {
-    p.style.color = "red";
+    if (p.style.color != "red") {
+        p.style.color = "red";
+
+    } else {
+        p.style.color = "black";
+    }
+
 };
 
 // third button
 let btn3 = document.getElementsByClassName("bigger")[0];
 btn3.onclick = function () {
-    btn3.style.width = "30%";
+    if(btn3.style.width !=="25%"){
+    btn3.style.width = "25%";
+    }else{
+         btn3.style.width = "10%";
+    }
 };
 // fourth button
 let btn4 = document.querySelector(".bordersolid");
 let p1 = document.querySelector(".p1");
 btn4.onclick = function () {
+    if( p1.style.border == "none"){
     p1.style.border = "2px solid black";
+    }else{
+        p1.style.border="none";
+    }
+
 };
 
 // fifth button
@@ -79,24 +94,24 @@ btn8.onclick = function () {
 // buttun9
 let btn9 = document.querySelector(".paragraph");
 let h2 = document.querySelector("h2")
-btn9.onclick = function (){
+btn9.onclick = function () {
     if (h2.style.fontStyle != "italic") {
 
         h2.style.fontStyle = "italic";
     }
-else{ h2.style.fontStyle = "italic";}
-    
+    else { h2.style.fontStyle ="normal"; }
+
 
 };
 //button10
-let btn10=document.querySelector(".toblue");
-let div1=document.querySelector(".mydiv1");
-btn10.onclick=function(){
+let btn10 = document.querySelector(".toblue");
+let div1 = document.querySelector(".mydiv1");
+btn10.onclick = function () {
 
-if(div1.style.backgroundColor!=="lightblue"){
-    div1.style.backgroundColor="lightblue";
-}else{
-     div1.style.backgroundColor="";
-}
+    if (div1.style.backgroundColor !== "lightblue") {
+        div1.style.backgroundColor = "lightblue";
+    } else {
+        div1.style.backgroundColor = "";
+    }
 };
 
