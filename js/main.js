@@ -23,10 +23,10 @@ btn2.onclick = function () {
 // third button
 let btn3 = document.getElementsByClassName("bigger")[0];
 btn3.onclick = function () {
-    if(btn3.style.width =="15%"){
+    if(btn3.style.width =="20%"){
     btn3.style.width = "30%";
     }else{
-         btn3.style.width = "15%";
+         btn3.style.width = "20%";
     }
 };
 // fourth button
